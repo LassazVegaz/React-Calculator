@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-app {
+  background-color: antiquewhite;
+  width: 350px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.cal-app .display {
+  grid-column: 1/5;
+  height: 90px;
+  background-color: goldenrod;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: 600;
+}
+.cal-app .button {
+  background-color: gold;
+  height: 70px;
+  width: 90px;
+  border: 1px solid red;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  outline: none;
+}
+.cal-app .button:hover {
+  background-color: azure;
+}
+.cal-app .operator {
+  background-color: yellow;
+}
+.cal-app .operator:hover {
+  background-color: cornsilk;
+}
+.cal-app .clear {
+  background-color: coral;
+}
+.cal-app .clear:hover {
+  background-color: red;
+}
